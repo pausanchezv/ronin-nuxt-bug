@@ -8,7 +8,7 @@ npm install
 npm run  dev
 ```
 
-## Pronlem
+## Problem
 
 The problem is that Nuxt 3 users are not able to use the library because it fails internally in the method sdk.connectInjected(). That means, if you’re using the popular framework Nuxt, you can’t use Ronin.
 
