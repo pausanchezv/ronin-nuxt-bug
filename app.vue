@@ -15,12 +15,12 @@ export default {
 
         async connect() {
 
-            const sdk = new WalletSDK()
-            await sdk.connectInjected()
-
             if (!this.checkRoninInstalled()) {
                 return
             }
+
+            const sdk = new WalletSDK()
+            await sdk.connectInjected()
 
             const accounts = await sdk.requestAccounts()
             if (accounts) {
